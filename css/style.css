@@ -117,7 +117,7 @@ main #ms-one .ms-one-content-button:hover {
 main #ms-one .ms-one-image {
   width: 100%;
   height: 100%;
-  background: url(media/flowers-sec-one.jpg);
+  background: url(../media/flowers-sec-one.jpg);
 }
 main #ms-one .ms-one-image-container {
   width: 100%;
@@ -133,7 +133,7 @@ main #ms-two {
 main #ms-two .ms-two-image {
   width: 100%;
   height: 100%;
-  background: url(media/flower-main-two.jpg);
+  background: url(../media/flower-main-two.jpg);
   background-position: center center;
 }
 main #ms-two .ms-two-image-container {
@@ -190,7 +190,7 @@ main #ms-three .ms-three-mvv-container {
 main #ms-three .ms-three-mvv {
   width: 100%;
   height: 100%;
-  background: url(media/mvv-sec-three.jpg);
+  background: url(../media/mvv-sec-three.jpg);
   background-position: center center;
 }
 main #ms-three .ms-three-mvv-content {
