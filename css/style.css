@@ -328,15 +328,15 @@ main #ms-four #mfi-submit {
   }
 }
 @media only screen and (max-width: 700px) {
-  main .header-menu-nav-list {
+  header .header-menu-nav-list {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
-  main .link-container {
+  header .link-container {
     width: 100%;
   }
-  main .link-container a {
+  header .link-container a {
     text-decoration: none;
   }
   main #ms-one, main #ms-two {
