@@ -1,1 +1,391 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: calc(15vh - 1.5px);
+  background-color: #FFFFFF;
+  border-bottom: 1.5px solid #E6AC09;
+}
+header .header-menu-nav-list {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+}
+header .link-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header .header-menu-nav-list-item {
+  display: inline-block;
+  padding: 7.5px 0;
+  font: normal normal 20px "Playfair Display", times;
+  color: #E6AC09;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+header .li-logo {
+  font: normal bold 40px "Cinzel Decorative", cursive;
+  text-align: center;
+}
+header .li-hover {
+  position: relative;
+  transition: all 0.35s ease-in-out;
+}
+header .li-hover:hover {
+  color: #000022;
+  cursor: pointer;
+}
+header .li-hover::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #000022;
+  content: " ";
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-in-out;
+}
+header .li-hover:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+main {
+  /* || Media Queries */
+}
+main .main-section {
+  height: 85vh;
+  scroll-margin-top: 15vh;
+}
+main #ms-one {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  align-items: center;
+  padding-top: 15vh;
+  background-color: #ECF8F8;
+}
+main #ms-one .ms-one-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  align-items: center;
+  padding: 0 100px;
+}
+main #ms-one .ms-one-content-title {
+  font: normal bold 52px "Raleway", arial;
+  color: #E6AC09;
+  text-align: center;
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+main #ms-one .ms-one-content-text {
+  font: normal normal 20px "Raleway", arial;
+  color: #000022;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+main #ms-one .ms-one-content-button {
+  padding: 7.5px 25px;
+  font: normal bold 20px "Cinzel Decorative", cursive;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  background-color: #E6AC09;
+  border: 1px solid transparent;
+  transition: all 0.35s ease-in-out;
+}
+main #ms-one .ms-one-content-button:hover {
+  color: #E6AC09;
+  background-color: #FFFFFF;
+  border-color: #E6AC09;
+  cursor: pointer;
+}
+main #ms-one .ms-one-image {
+  width: 100%;
+  height: 100%;
+  background: url(/media/flowers-sec-one.jpg);
+}
+main #ms-one .ms-one-image-container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(230, 173, 0, 0.8509803922), rgba(230, 173, 0, 0.8509803922));
+}
+main #ms-two {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  align-items: center;
+  background-color: #000022;
+}
+main #ms-two .ms-two-image {
+  width: 100%;
+  height: 100%;
+  background: url(/media/flower-main-two.jpg);
+  background-position: center center;
+}
+main #ms-two .ms-two-image-container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(230, 173, 0, 0.8509803922), rgba(230, 173, 0, 0.8509803922));
+}
+main #ms-two .ms-two-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  align-items: center;
+  padding: 0 100px;
+}
+main #ms-two .ms-two-content-title {
+  font: normal bold 52px "Raleway", arial;
+  color: #ECF8F8;
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+main #ms-two .ms-two-content-text-up, main #ms-two .ms-two-content-text-down {
+  font: normal normal 20px "Playfair Display", times;
+  color: #ECF8F8;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+main #ms-two .ms-two-content-button {
+  padding: 7.5px 25px;
+  font: normal bold 20px "Cinzel Decorative", cursive;
+  color: #E6AC09;
+  letter-spacing: 2px;
+  background-color: #FFFFFF;
+  border: 1px solid transparent;
+  transition: all 0.35s ease-in-out;
+}
+main #ms-two .ms-two-content-button:hover {
+  color: #FFFFFF;
+  background-color: #E6AC09;
+  border-color: #FFFFFF;
+  cursor: pointer;
+}
+main #ms-three {
+  display: grid;
+  grid-template-rows: 82.5% 17.5%;
+  background-color: #ECF8F8;
+}
+main #ms-three .ms-three-mvv-container {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+main #ms-three .ms-three-mvv {
+  width: 100%;
+  height: 100%;
+  background: url(/media/mvv-sec-three.jpg);
+  background-position: center center;
+}
+main #ms-three .ms-three-mvv-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 66, 0.8509803922), rgba(0, 0, 66, 0.8509803922));
+}
+main #ms-three .ms-three-mvv-content-head {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  align-items: center;
+}
+main #ms-three .fa-regular, main #ms-three .fa-solid {
+  font-size: 48px;
+  color: #ECF8F8;
+}
+main #ms-three .fa-chevron-down {
+  font-size: 20px;
+  transition: all 0.35s ease-in-out;
+}
+main #ms-three .ms-mvv-content-title {
+  font: normal bold 24px "Cinzel Decorative", cursive;
+  color: #ECF8F8;
+}
+main #ms-three .ms-mvv-content-text {
+  padding: 0 70px;
+  font: normal normal 20px "Raleway", arial;
+  color: #ECF8F8;
+  text-align: center;
+}
+main #ms-three .ms-three-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #ms-three .ms-three-footer-button {
+  padding: 7.5px 25px;
+  font: normal bold 20px "Cinzel Decorative", cursive;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  background-color: #E6AC09;
+  border: 1px solid transparent;
+  transition: all 0.35s ease-in-out;
+}
+main #ms-three .ms-three-footer-button:hover {
+  color: #E6AC09;
+  background-color: #FFFFFF;
+  border-color: #E6AC09;
+  cursor: pointer;
+}
+main #ms-three .ms-three-footer-button:hover > .fa-chevron-down {
+  color: #E6AC09;
+}
+main #ms-four {
+  display: grid;
+  grid-template-columns: 55% 10% 35%;
+  align-items: center;
+  padding-left: 120px;
+  background-color: #000022;
+}
+main #ms-four .ms-four-text-title {
+  font: normal bold 52px "Raleway", arial;
+  color: #ECF8F8;
+  text-decoration: underline;
+}
+main #ms-four .ms-four-text-desc {
+  font: normal normal 20px "Raleway", arial;
+  color: #ECF8F8;
+}
+main #ms-four .ms-four-input {
+  display: flex;
+  align-items: center;
+}
+main #ms-four #mfi-email {
+  width: 250px;
+  height: 30px;
+  font: normal normal 20px "Playfair Display", times;
+  color: #000022;
+  text-indent: 4px;
+  border: none;
+}
+main #ms-four #mfi-email:focus {
+  outline: none;
+}
+main #ms-four .ms-four-midbar {
+  color: #E6AC09;
+  transform: rotate(90deg);
+}
+main #ms-four #mfi-submit {
+  width: 100px;
+  height: 30px;
+  font: normal bold 16px "Raleway", arial;
+  color: #ECF8F8;
+  background-color: #E6AC09;
+  border: none;
+}
+@media only screen and (max-width: 1100px) {
+  main #ms-four {
+    padding-left: 30px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  main .ms-two-content {
+    padding: 0 0px !important;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  main #ms-four {
+    grid-template-columns: 40% 10% 40%;
+    justify-content: space-evenly;
+  }
+  main .ms-four-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  main .ms-four-input {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 830px) {
+  main .ms-two-content-text-down, main .ms-two-content-text-up {
+    font-size: 16px !important;
+    padding: 0 7.5px;
+  }
+  main .ms-mvv-content-text {
+    padding: 0 35px !important;
+  }
+}
+@media only screen and (max-width: 700px) {
+  header .header-menu-nav-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  header .link-container {
+    width: 100%;
+  }
+  header .link-container a {
+    text-decoration: none;
+  }
+  main #ms-one, main #ms-two {
+    grid-template-columns: 100%;
+  }
+  main .ms-two-image {
+    order: 1;
+  }
+  main #ms-three {
+    grid-template-rows: 100%;
+  }
+  main .ms-three-mvv-container {
+    grid-template-columns: 100% !important;
+    row-gap: 10px;
+  }
+  main .ms-three-mvv-content {
+    padding: 2px 0 !important;
+  }
+  main .ms-three-footer {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  main #ms-four {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 0;
+    padding-bottom: 20%;
+  }
+  main .ms-four-midbar {
+    transform: rotate(0deg) !important;
+    width: 70vw;
+  }
+}
+@media only screen and (max-width: 450px) {
+  main .ms-one-image, main .ms-two-image {
+    display: none;
+  }
+  main #ms-one, main #ms-two {
+    grid-template-columns: 100%;
+  }
+  main .ms-three-mvv-container {
+    row-gap: 0px !important;
+    padding: 0px !important;
+  }
+  main .ms-three-mvv-content {
+    border-top: 3.5px solid #ECF8F8;
+  }
+}/*# sourceMappingURL=style.css.map */

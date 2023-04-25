@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/14f2d4c777.js" crossorigin="anonymous"></script>
+    <title>Florença</title>
+</head>
+<body>
+    <header>
+        <section class="header-menu">
+            <nav class="header-menu-nav">
+                <ul class="header-menu-nav-list">
+                    <li class="header-menu-nav-list-item li-logo">Florença</li>
+                    <div class="link-container">
+                        <a href="#ms-one">
+                            <li class="header-menu-nav-list-item li-hover">Intro</li>
+                        </a>
+                        <a href="#ms-two">
+                            <li class="header-menu-nav-list-item li-hover">História</li>
+                        </a>
+                        <a href="#ms-three">
+                            <li class="header-menu-nav-list-item li-hover">MVV</li>
+                        </a>
+                        <a href="#ms-four">
+                            <li class="header-menu-nav-list-item li-hover">Newsletter</li>
+                        </a>
+                    </div>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="main-section" id="ms-one">
+            <div class="ms-one-content">
+                <h2 class="ms-one-content-title">Olá, seja bem vinda!</h2>
+                <p class="ms-one-content-text">A Florença é a mais promissora floricultura do momento, visando um novo jeito de se comercializar as mais belas flores da região.</p>
+                <button class="ms-one-content-button" onclick="document.getElementById('ms-two').scrollIntoView();">
+                    História <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="ms-one-image">
+                <div class="ms-one-image-container">
+                </div>
+            </div>
+        </section>
+        <section class="main-section" id="ms-two">
+            <section class="ms-two-image">
+                <div class="ms-two-image-container"></div>
+            </section>
+            <section class="ms-two-content">
+                <h2 class="ms-two-content-title">História</h2>
+                <p class="ms-two-content-text-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit natus voluptates sed et. Consequatur, repudiandae aliquam. Ut tempore temporibus consectetur aliquid eius reiciendis, ea soluta quidem neque sequi hic numquam.</p>
+                <p class="ms-two-content-text-down">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas reiciendis et magni sapiente eaque deleniti iste libero molestiae sit? Non dolorum, quasi eveniet laudantium labore quod tempore temporibus magnam sunt.</p>
+                <button class="ms-two-content-button" onclick="document.getElementById('ms-three').scrollIntoView();">
+                    Missão, Visão e Valores <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </section>
+        </section>
+        <section class="main-section" id="ms-three">
+            <section class="ms-three-mvv-container">
+                <section class="ms-three-mvv">
+                    <div class="ms-three-mvv-content">
+                        <div class="ms-three-mvv-content-head">
+                            <i class="fa-solid fa-bullseye"></i>
+                            <h2 class="ms-mvv-content-title">Missão</h2>
+                        </div>
+                        <p class="ms-mvv-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias id dolor itaque ea illum inventore quidem quos ad? Quo eveniet quam maxime fuga error dolorum voluptatum nam saepe rerum placeat.</p>
+                    </div>
+                </section>
+                <section class="ms-three-mvv">
+                    <div class="ms-three-mvv-content">
+                        <div class="ms-three-mvv-content-head">
+                            <i class="fa-regular fa-lightbulb"></i>
+                            <h2 class="ms-mvv-content-title">Visão</h2>
+                        </div>
+                        <p class="ms-mvv-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias id dolor itaque ea illum inventore quidem quos ad? Quo eveniet quam maxime fuga error dolorum voluptatum nam saepe rerum placeat.</p>
+                    </div>
+                </section>
+                <section class="ms-three-mvv">
+                    <div class="ms-three-mvv-content">
+                        <div class="ms-three-mvv-content-head">
+                            <i class="fa-regular fa-flag"></i>
+                            <h2 class="ms-mvv-content-title">Valores</h2>
+                        </div>
+                        <p class="ms-mvv-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias id dolor itaque ea illum inventore quidem quos ad? Quo eveniet quam maxime fuga error dolorum voluptatum nam saepe rerum placeat.</p>
+                    </div>
+                </section>
+            </section>
+            <section class="ms-three-footer">
+                <button class="ms-three-footer-button" onclick="document.getElementById('ms-four').scrollIntoView();">
+                    Newsletter <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </section>
+        </section>
+        <section class="main-section" id="ms-four">
+            <section class="ms-four-text">
+                <h2 class="ms-four-text-title">Newsletter</h2>
+                <p class="ms-four-text-desc">Assine nossa Newsletter e fique por dentro das próximas novidades.</p>
+            </section>
+            <section class="ms-four-mid">
+                <hr class="ms-four-midbar">
+            </section>
+            <section class="ms-four-input">
+                <input type="email" name="mfi-email" id="mfi-email" placeholder="seuemail@email.com" required>
+                <input type="submit" value="Cadastrar" id="mfi-submit">
+            </section>
+        </section>
+    </main>
+</body>
+</html>

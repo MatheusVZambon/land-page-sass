@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;700&display=swap');
+
+$rg-gold: #E6AC09;
+$lt-blue: #ECF8F8;
+$dk-blue: #000022;
+$rg-whte: #FFFFFF;
+$op-gold: #E6AD00D9;
+$op-dblu: #000042D9;
+
+$ss-raleway: 'Raleway',arial;
+$sf-pfdisplay: 'Playfair Display',times;
+$hw-cinzel: 'Cinzel Decorative', cursive;
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    height: calc(15vh - 1.5px);
+
+    background-color: $rg-whte;
+
+    border-bottom: 1.5px solid $rg-gold;
+
+    .header-menu-nav-list{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 15vh;
+    }
+    .link-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .header-menu-nav-list-item{
+        display: inline-block;
+
+        padding: 7.5px 0;
+
+        font: normal normal 20px $sf-pfdisplay;
+        color: $rg-gold;
+
+        letter-spacing: 1.5px;
+
+        text-align: center;
+    }
+    .li-logo{
+        font: normal bold 40px $hw-cinzel;
+
+        text-align: center;
+    }
+    .li-hover{
+        position: relative;
+
+        transition: all 0.35s ease-in-out;
+    }
+    .li-hover:hover{
+        color: $dk-blue;
+        cursor: pointer;
+    }
+    .li-hover::after{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 3px;
+
+        background-color: $dk-blue;
+
+        content: ' ';
+        
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-in-out;
+    }
+    .li-hover:hover::after{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
+
+main{
+    .main-section{
+        height: 85vh;
+        scroll-margin-top: 15vh;
+    }
+    #ms-one{
+        display: grid;
+        grid-template-columns: 55% 45%;
+        align-items: center;
+
+        padding-top: 15vh;
+
+        background-color: $lt-blue;
+    
+        .ms-one-content{
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+            align-items: center;
+
+            padding: 0 100px;
+        }
+        .ms-one-content-title{
+            font: normal bold 52px $ss-raleway;
+            color: $rg-gold;
+
+            text-align: center;
+            text-decoration: underline;
+
+            letter-spacing: 2px;
+        }
+        .ms-one-content-text{
+            font: normal normal 20px $ss-raleway;
+            color: $dk-blue;
+            text-align: center;
+
+            letter-spacing: 1.5px;
+        }
+        .ms-one-content-button{
+            padding: 7.5px 25px;
+
+            font: normal bold 20px $hw-cinzel;
+            color: $rg-whte;
+
+            letter-spacing: 2px;
+
+            background-color: $rg-gold;
+
+            border: 1px solid transparent;
+
+            transition: all 0.35s ease-in-out;
+        }
+        .ms-one-content-button:hover{
+            color: $rg-gold;
+            background-color: $rg-whte;
+            border-color: $rg-gold;
+
+            cursor: pointer;
+        }
+        .ms-one-image{
+            width: 100%;
+            height: 100%;
+
+            background: url(/media/flowers-sec-one.jpg);
+        }
+        .ms-one-image-container{
+            width: 100%;
+            height: 100%;
+
+            background: linear-gradient(to right, $op-gold, $op-gold);
+        }
+    }
+    #ms-two{
+        display: grid;
+        grid-template-columns: 45% 55%;
+        align-items: center;
+
+        background-color: $dk-blue;
+    
+        .ms-two-image{
+            width: 100%;
+            height: 100%;
+
+            background: url(/media/flower-main-two.jpg);
+            background-position: center center;
+        }
+        .ms-two-image-container{
+            width: 100%;
+            height: 100%;
+
+            background: linear-gradient(to right, $op-gold, $op-gold);
+        }
+        .ms-two-content{
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+            align-items: center;
+
+            padding: 0 100px;
+        }
+        .ms-two-content-title{
+            font: normal bold 52px $ss-raleway;
+            color: $lt-blue;
+
+            text-decoration: underline;
+
+            letter-spacing: 2px;
+        }
+        .ms-two-content-text-up,.ms-two-content-text-down{
+            font: normal normal 20px $sf-pfdisplay;
+            color: $lt-blue;
+            text-align: center;
+
+            letter-spacing: 1.5px;
+        }
+        .ms-two-content-button{
+            padding: 7.5px 25px;
+
+            font: normal bold 20px $hw-cinzel;
+            color: $rg-gold;
+
+            letter-spacing: 2px;
+
+            background-color: $rg-whte;
+
+            border: 1px solid transparent;
+
+            transition: all 0.35s ease-in-out;
+        }
+        .ms-two-content-button:hover{
+            color: $rg-whte;
+            background-color: $rg-gold;
+            border-color: $rg-whte;
+
+            cursor: pointer;
+        }
+    }
+    #ms-three{
+        display: grid;
+        grid-template-rows: 82.5% 17.5%;
+
+        background-color: $lt-blue;
+    
+        .ms-three-mvv-container{
+            display: grid;
+            grid-template-columns: repeat(3,(calc(99%/3)));
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 10px 0;
+        }
+        .ms-three-mvv{
+            width: 100%;
+            height: 100%;
+
+            background: url(/media/mvv-sec-three.jpg);
+            background-position: center center;
+        }
+        .ms-three-mvv-content{
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            align-items: center;
+            justify-content: space-around;
+
+            width: 100%;
+            height: 100%;
+
+            background: linear-gradient(to right, $op-dblu, $op-dblu);
+        }
+        .ms-three-mvv-content-head{
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+            align-items: center;
+        }
+        .fa-regular,.fa-solid{
+            font-size: 48px;
+            color: $lt-blue;
+        }
+        .fa-chevron-down{
+            font-size: 20px;
+
+            transition: all 0.35s ease-in-out;
+        }
+        .ms-mvv-content-title{
+            font: normal bold 24px $hw-cinzel;
+            color: $lt-blue;
+        }
+        .ms-mvv-content-text{
+            padding: 0 70px;
+
+            font: normal normal 20px $ss-raleway;
+            color: $lt-blue;
+
+            text-align: center;
+        }
+        .ms-three-footer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .ms-three-footer-button{
+            padding: 7.5px 25px;
+
+            font: normal bold 20px $hw-cinzel;
+            color: $rg-whte;
+
+            letter-spacing: 2px;
+
+            background-color: $rg-gold;
+
+            border: 1px solid transparent;
+
+            transition: all 0.35s ease-in-out;
+        }
+        .ms-three-footer-button:hover{
+            color: $rg-gold;
+            background-color: $rg-whte;
+            border-color: $rg-gold;
+
+            cursor: pointer;
+        }
+        .ms-three-footer-button:hover > .fa-chevron-down{
+            color: $rg-gold;
+        }
+    }
+    #ms-four{
+        display: grid;
+        grid-template-columns: 55% 10% 35%;
+        align-items: center;
+
+        padding-left: 120px;
+
+        background-color: $dk-blue;
+    
+        .ms-four-text-title{
+            font: normal bold 52px $ss-raleway;
+            color: $lt-blue;
+
+            text-decoration: underline;
+        }
+        .ms-four-text-desc{
+            font: normal normal 20px $ss-raleway;
+            color: $lt-blue;
+        
+        }
+        .ms-four-input{
+            display: flex;
+            align-items: center;
+        }
+        #mfi-email{
+            width: 250px;
+            height: 30px;
+
+            font: normal normal 20px $sf-pfdisplay;
+            color: $dk-blue;
+
+            text-indent: 4px;
+
+            border: none;
+        }
+        #mfi-email:focus{
+            outline: none;
+        }
+        .ms-four-midbar{
+            color: $rg-gold;
+
+            transform: rotate(90deg);
+        }
+        #mfi-submit{
+            width: 100px;
+            height: 30px;
+
+            font: normal bold 16px $ss-raleway;
+            color: $lt-blue;
+
+            background-color: $rg-gold;
+
+            border: none;
+        }
+    }
+
+/* || Media Queries */
+    @media only screen and (max-width: 1100px){
+        #ms-four{
+            padding-left: 30px;
+        }
+    }
+    @media only screen and (max-width: 1050px){
+        .ms-two-content{
+            padding: 0 0px !important;
+        }
+    }
+    @media only screen and (max-width: 1000px){
+        #ms-four{
+           grid-template-columns: 40% 10% 40%;
+           justify-content: space-evenly;
+        }
+        .ms-four-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            text-align: center;
+        }
+        .ms-four-input{
+            flex-direction: column;
+        }
+    }
+    @media only screen and (max-width: 830px){
+        .ms-two-content-text-down,.ms-two-content-text-up{
+            font-size: 16px !important;
+            padding: 0 7.5px;
+        }
+        .ms-mvv-content-text{
+            padding: 0 35px !important;
+        }
+    }
+    @media only screen and (max-width: 700px){
+        .header-menu-nav-list{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .link-container{
+            width: 100%;
+        }
+        .link-container a{
+            text-decoration: none;
+        }
+        #ms-one,#ms-two{
+            grid-template-columns: 100%;
+        }
+        .ms-two-image{
+            order: 1;
+        }
+        #ms-three{
+            grid-template-rows: 100%;
+        }
+        .ms-three-mvv-container{
+            grid-template-columns: 100% !important;
+
+            row-gap: 10px;
+        }
+        .ms-three-mvv-content{
+            padding: 2px 0 !important; 
+        }
+        .ms-three-footer{
+            display: none !important;
+        }
+    }
+    @media only screen and (max-width: 600px){
+        #ms-four{
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            align-items: center;
+            justify-content: flex-end;
+            padding-left: 0;
+            padding-bottom: 20%;
+        }
+        
+        .ms-four-midbar{
+            transform: rotate(0deg) !important;
+            width: 70vw;
+        }
+    }
+    @media only screen and (max-width: 450px){
+        .ms-one-image,.ms-two-image{
+            display: none;
+        }
+        #ms-one,#ms-two{
+            grid-template-columns: 100%;
+        }
+        .ms-three-mvv-container{
+            row-gap: 0px !important;
+            padding: 0px !important;
+        }
+        .ms-three-mvv-content{
+            border-top: 3.5px solid $lt-blue;
+        }
+    }
+}
